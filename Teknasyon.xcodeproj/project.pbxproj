@@ -49,6 +49,9 @@
 		36019F5729885932005B8DFF /* DetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5629885932005B8DFF /* DetailRepository.swift */; };
 		36019F5929885941005B8DFF /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5829885941005B8DFF /* DetailViewModel.swift */; };
 		36019F5B29885953005B8DFF /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5A29885953005B8DFF /* DetailController.swift */; };
+		36019F5E29885AB1005B8DFF /* MockDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5D29885AB1005B8DFF /* MockDetailController.swift */; };
+		36019F6029885AB7005B8DFF /* MockDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5F29885AB7005B8DFF /* MockDetailRepository.swift */; };
+		36019F6229885AC0005B8DFF /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F6129885AC0005B8DFF /* DetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,9 @@
 		36019F5629885932005B8DFF /* DetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepository.swift; sourceTree = "<group>"; };
 		36019F5829885941005B8DFF /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		36019F5A29885953005B8DFF /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		36019F5D29885AB1005B8DFF /* MockDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDetailController.swift; sourceTree = "<group>"; };
+		36019F5F29885AB7005B8DFF /* MockDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDetailRepository.swift; sourceTree = "<group>"; };
+		36019F6129885AC0005B8DFF /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +380,7 @@
 		36019F4129884F38005B8DFF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				36019F5C29885AAA005B8DFF /* Detail */,
 				36019F4429884F76005B8DFF /* Home */,
 			);
 			path = Modules;
@@ -415,6 +422,16 @@
 				36019F5029885891005B8DFF /* DetailContainerViewModel.swift */,
 			);
 			path = DetailContainerView;
+			sourceTree = "<group>";
+		};
+		36019F5C29885AAA005B8DFF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				36019F5D29885AB1005B8DFF /* MockDetailController.swift */,
+				36019F5F29885AB7005B8DFF /* MockDetailRepository.swift */,
+				36019F6129885AC0005B8DFF /* DetailViewModelTests.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -589,7 +606,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36019F5E29885AB1005B8DFF /* MockDetailController.swift in Sources */,
 				36019F4629884F7D005B8DFF /* MockHomeController.swift in Sources */,
+				36019F6029885AB7005B8DFF /* MockDetailRepository.swift in Sources */,
+				36019F6229885AC0005B8DFF /* DetailViewModelTests.swift in Sources */,
 				36019F4329884F5C005B8DFF /* MockCoordinator.swift in Sources */,
 				36019F4829884F82005B8DFF /* MockHomeRepository.swift in Sources */,
 				36019F4A29884FB3005B8DFF /* HomeViewModelTests.swift in Sources */,
