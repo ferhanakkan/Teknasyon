@@ -20,4 +20,16 @@ extension UIView {
             bottomAnchor.constraint(equalTo: superSafe.bottomAnchor, constant: -edgeInset.bottom)
         ])
     }
+
+    func pinToSuperView(edgeInset: UIEdgeInsets = .zero) {
+        guard let superview else { return }
+        self.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: edgeInset.left),
+            trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -edgeInset.right),
+            topAnchor.constraint(equalTo: superview.topAnchor, constant: edgeInset.top),
+            bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -edgeInset.bottom)
+        ])
+    }
 }

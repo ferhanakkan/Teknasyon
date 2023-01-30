@@ -32,5 +32,7 @@ final class MainCoordinator: Coordinator {
     }
 
     func showDetails(with id: Int) {
+        let vc = DetailController(viewModel: DetailViewModel(id: id))
+        navigationController.show(vc, sender: nil)
     }
 }

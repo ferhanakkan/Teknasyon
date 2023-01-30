@@ -42,6 +42,13 @@
 		36019F4629884F7D005B8DFF /* MockHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4529884F7D005B8DFF /* MockHomeController.swift */; };
 		36019F4829884F82005B8DFF /* MockHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4729884F82005B8DFF /* MockHomeRepository.swift */; };
 		36019F4A29884FB3005B8DFF /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4929884FB3005B8DFF /* HomeViewModelTests.swift */; };
+		36019F4F2988586E005B8DFF /* DetailContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4E2988586E005B8DFF /* DetailContainerView.swift */; };
+		36019F5129885891005B8DFF /* DetailContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5029885891005B8DFF /* DetailContainerViewModel.swift */; };
+		36019F53298858BB005B8DFF /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F52298858BB005B8DFF /* CustomImageView.swift */; };
+		36019F55298858EB005B8DFF /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F54298858EB005B8DFF /* CustomScrollView.swift */; };
+		36019F5729885932005B8DFF /* DetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5629885932005B8DFF /* DetailRepository.swift */; };
+		36019F5929885941005B8DFF /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5829885941005B8DFF /* DetailViewModel.swift */; };
+		36019F5B29885953005B8DFF /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F5A29885953005B8DFF /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +99,13 @@
 		36019F4529884F7D005B8DFF /* MockHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeController.swift; sourceTree = "<group>"; };
 		36019F4729884F82005B8DFF /* MockHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRepository.swift; sourceTree = "<group>"; };
 		36019F4929884FB3005B8DFF /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		36019F4E2988586E005B8DFF /* DetailContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContainerView.swift; sourceTree = "<group>"; };
+		36019F5029885891005B8DFF /* DetailContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContainerViewModel.swift; sourceTree = "<group>"; };
+		36019F52298858BB005B8DFF /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		36019F54298858EB005B8DFF /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		36019F5629885932005B8DFF /* DetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepository.swift; sourceTree = "<group>"; };
+		36019F5829885941005B8DFF /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		36019F5A29885953005B8DFF /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +130,9 @@
 		36019EC329884075005B8DFF = {
 			isa = PBXGroup;
 			children = (
+				36019ECD29884075005B8DFF /* Products */,
 				36019ECE29884075005B8DFF /* Teknasyon */,
 				36019F3929884F2D005B8DFF /* TeknasyonTests */,
-				36019ECD29884075005B8DFF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +210,7 @@
 		36019EE82988425C005B8DFF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				36019F4B2988584D005B8DFF /* Detail */,
 				36019F1A29884BF7005B8DFF /* Home */,
 			);
 			path = Scenes;
@@ -297,6 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				36019F2E29884D2A005B8DFF /* ActivityIndicatorContainerView.swift */,
+				36019F52298858BB005B8DFF /* CustomImageView.swift */,
+				36019F54298858EB005B8DFF /* CustomScrollView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -370,6 +387,34 @@
 				36019F4929884FB3005B8DFF /* HomeViewModelTests.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		36019F4B2988584D005B8DFF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				36019F4C29885855005B8DFF /* Views */,
+				36019F5629885932005B8DFF /* DetailRepository.swift */,
+				36019F5829885941005B8DFF /* DetailViewModel.swift */,
+				36019F5A29885953005B8DFF /* DetailController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		36019F4C29885855005B8DFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36019F4D2988585B005B8DFF /* DetailContainerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36019F4D2988585B005B8DFF /* DetailContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				36019F4E2988586E005B8DFF /* DetailContainerView.swift */,
+				36019F5029885891005B8DFF /* DetailContainerViewModel.swift */,
+			);
+			path = DetailContainerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,11 +552,15 @@
 				36019F07298847C8005B8DFF /* Constants+API.swift in Sources */,
 				36019EF72988467E005B8DFF /* TmdbRequest.swift in Sources */,
 				36019F2D29884D07005B8DFF /* UITableView+Extensions.swift in Sources */,
+				36019F5729885932005B8DFF /* DetailRepository.swift in Sources */,
 				36019F1529884A84005B8DFF /* AlertManager.swift in Sources */,
+				36019F5B29885953005B8DFF /* DetailController.swift in Sources */,
+				36019F5129885891005B8DFF /* DetailContainerViewModel.swift in Sources */,
 				36019ED029884075005B8DFF /* AppDelegate.swift in Sources */,
 				36019F3329884E5C005B8DFF /* Constants+Home.swift in Sources */,
 				36019F022988477E005B8DFF /* GetPopularTvShowsResponse.swift in Sources */,
 				36019F10298849A8005B8DFF /* UIKit+Extensions.swift in Sources */,
+				36019F55298858EB005B8DFF /* CustomScrollView.swift in Sources */,
 				36019F2229884C16005B8DFF /* AlertShowable.swift in Sources */,
 				36019EFE298846FB005B8DFF /* GetTvShowsDetailsRequest.swift in Sources */,
 				36019EF529884676005B8DFF /* TmdbAPI.swift in Sources */,
@@ -521,14 +570,17 @@
 				36019F0C2988495A005B8DFF /* LoadingManager.swift in Sources */,
 				36019F3129884D68005B8DFF /* UIStackView+Extensions.swift in Sources */,
 				36019EF1298844C3005B8DFF /* MainCoordinator.swift in Sources */,
+				36019F53298858BB005B8DFF /* CustomImageView.swift in Sources */,
 				36019F2429884C29005B8DFF /* ViewModelProtocols.swift in Sources */,
 				36019EFC298846D4005B8DFF /* GetPopularTvShowsRequest.swift in Sources */,
 				36019F1929884AFE005B8DFF /* CustomAlertController.swift in Sources */,
+				36019F4F2988586E005B8DFF /* DetailContainerView.swift in Sources */,
 				36019F2B29884CAD005B8DFF /* TvShowListingTableViewCellViewModel.swift in Sources */,
 				36019F2929884CA5005B8DFF /* TvShowListingTableViewCell.swift in Sources */,
 				36019F05298847BA005B8DFF /* Constants.swift in Sources */,
 				36019F1E29884C00005B8DFF /* HomeRepository.swift in Sources */,
 				36019F2F29884D2A005B8DFF /* ActivityIndicatorContainerView.swift in Sources */,
+				36019F5929885941005B8DFF /* DetailViewModel.swift in Sources */,
 				36019F13298849CB005B8DFF /* LoadingShowable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
