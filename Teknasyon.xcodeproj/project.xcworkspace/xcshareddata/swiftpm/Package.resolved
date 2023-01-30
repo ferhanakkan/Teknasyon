@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "fafoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ferhanakkan/FAFoundation",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "6af14cb1c7e76b4ccf9c7ed997e6ecb7e344ec6a"
+      }
+    }
+  ],
+  "version" : 2
+}

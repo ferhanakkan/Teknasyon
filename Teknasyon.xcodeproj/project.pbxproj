@@ -12,6 +12,16 @@
 		36019EDC29884076005B8DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36019EDA29884076005B8DFF /* LaunchScreen.storyboard */; };
 		36019EED29884294005B8DFF /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36019EEC29884294005B8DFF /* AppIcon.xcassets */; };
 		36019EF1298844C3005B8DFF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019EF0298844C3005B8DFF /* MainCoordinator.swift */; };
+		36019EF529884676005B8DFF /* TmdbAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019EF429884676005B8DFF /* TmdbAPI.swift */; };
+		36019EF72988467E005B8DFF /* TmdbRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019EF62988467E005B8DFF /* TmdbRequest.swift */; };
+		36019EFA29884693005B8DFF /* FAFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 36019EF929884693005B8DFF /* FAFoundation */; };
+		36019EFC298846D4005B8DFF /* GetPopularTvShowsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019EFB298846D4005B8DFF /* GetPopularTvShowsRequest.swift */; };
+		36019EFE298846FB005B8DFF /* GetTvShowsDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019EFD298846FB005B8DFF /* GetTvShowsDetailsRequest.swift */; };
+		36019F0029884756005B8DFF /* GetTvShowDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019EFF29884756005B8DFF /* GetTvShowDetailsResponse.swift */; };
+		36019F022988477E005B8DFF /* GetPopularTvShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F012988477E005B8DFF /* GetPopularTvShowsResponse.swift */; };
+		36019F05298847BA005B8DFF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F04298847BA005B8DFF /* Constants.swift */; };
+		36019F07298847C8005B8DFF /* Constants+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F06298847C8005B8DFF /* Constants+API.swift */; };
+		36019F0A29884824005B8DFF /* PopularTvShowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F0929884824005B8DFF /* PopularTvShowResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,15 @@
 		36019EDD29884076005B8DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36019EEC29884294005B8DFF /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		36019EF0298844C3005B8DFF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		36019EF429884676005B8DFF /* TmdbAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbAPI.swift; sourceTree = "<group>"; };
+		36019EF62988467E005B8DFF /* TmdbRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbRequest.swift; sourceTree = "<group>"; };
+		36019EFB298846D4005B8DFF /* GetPopularTvShowsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularTvShowsRequest.swift; sourceTree = "<group>"; };
+		36019EFD298846FB005B8DFF /* GetTvShowsDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTvShowsDetailsRequest.swift; sourceTree = "<group>"; };
+		36019EFF29884756005B8DFF /* GetTvShowDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTvShowDetailsResponse.swift; sourceTree = "<group>"; };
+		36019F012988477E005B8DFF /* GetPopularTvShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularTvShowsResponse.swift; sourceTree = "<group>"; };
+		36019F04298847BA005B8DFF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		36019F06298847C8005B8DFF /* Constants+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+API.swift"; sourceTree = "<group>"; };
+		36019F0929884824005B8DFF /* PopularTvShowResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36019EFA29884693005B8DFF /* FAFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +76,7 @@
 			children = (
 				36019EE32988422C005B8DFF /* App */,
 				36019EE429884232005B8DFF /* Managers */,
+				36019F0829884819005B8DFF /* Models */,
 				36019EE529884237005B8DFF /* Networking */,
 				36019EE729884250005B8DFF /* Resources */,
 				36019EE82988425C005B8DFF /* Scenes */,
@@ -94,6 +115,10 @@
 		36019EE629884240005B8DFF /* TmdbAPI */ = {
 			isa = PBXGroup;
 			children = (
+				36019EF329884668005B8DFF /* Response */,
+				36019EF229884662005B8DFF /* Request */,
+				36019EF429884676005B8DFF /* TmdbAPI.swift */,
+				36019EF62988467E005B8DFF /* TmdbRequest.swift */,
 			);
 			path = TmdbAPI;
 			sourceTree = "<group>";
@@ -124,6 +149,7 @@
 		36019EEA2988426C005B8DFF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				36019F03298847B5005B8DFF /* Constants */,
 				36019EEF298844BC005B8DFF /* Coordinator */,
 			);
 			path = Utilities;
@@ -144,6 +170,41 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		36019EF229884662005B8DFF /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				36019EFB298846D4005B8DFF /* GetPopularTvShowsRequest.swift */,
+				36019EFD298846FB005B8DFF /* GetTvShowsDetailsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		36019EF329884668005B8DFF /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				36019EFF29884756005B8DFF /* GetTvShowDetailsResponse.swift */,
+				36019F012988477E005B8DFF /* GetPopularTvShowsResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		36019F03298847B5005B8DFF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				36019F04298847BA005B8DFF /* Constants.swift */,
+				36019F06298847C8005B8DFF /* Constants+API.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		36019F0829884819005B8DFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36019F0929884824005B8DFF /* PopularTvShowResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +222,9 @@
 			dependencies = (
 			);
 			name = Teknasyon;
+			packageProductDependencies = (
+				36019EF929884693005B8DFF /* FAFoundation */,
+			);
 			productName = Teknasyon;
 			productReference = 36019ECC29884075005B8DFF /* Teknasyon.app */;
 			productType = "com.apple.product-type.application";
@@ -189,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 36019EC329884075005B8DFF;
+			packageReferences = (
+				36019EF829884693005B8DFF /* XCRemoteSwiftPackageReference "FAFoundation" */,
+			);
 			productRefGroup = 36019ECD29884075005B8DFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,8 +305,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36019F07298847C8005B8DFF /* Constants+API.swift in Sources */,
+				36019EF72988467E005B8DFF /* TmdbRequest.swift in Sources */,
 				36019ED029884075005B8DFF /* AppDelegate.swift in Sources */,
+				36019F022988477E005B8DFF /* GetPopularTvShowsResponse.swift in Sources */,
+				36019EFE298846FB005B8DFF /* GetTvShowsDetailsRequest.swift in Sources */,
+				36019EF529884676005B8DFF /* TmdbAPI.swift in Sources */,
+				36019F0029884756005B8DFF /* GetTvShowDetailsResponse.swift in Sources */,
+				36019F0A29884824005B8DFF /* PopularTvShowResult.swift in Sources */,
 				36019EF1298844C3005B8DFF /* MainCoordinator.swift in Sources */,
+				36019EFC298846D4005B8DFF /* GetPopularTvShowsRequest.swift in Sources */,
+				36019F05298847BA005B8DFF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +533,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36019EF829884693005B8DFF /* XCRemoteSwiftPackageReference "FAFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ferhanakkan/FAFoundation";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36019EF929884693005B8DFF /* FAFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36019EF829884693005B8DFF /* XCRemoteSwiftPackageReference "FAFoundation" */;
+			productName = FAFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36019EC429884075005B8DFF /* Project object */;
 }
