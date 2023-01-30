@@ -71,7 +71,7 @@ extension HomeViewModel {
 
     func willDisplayCellAt(indexPath: IndexPath) {
         guard
-            indexPath.row == datas.count,
+            indexPath.row == datas.count - 1,
             homeRepository.activeRequest.isNil
         else {
             return
