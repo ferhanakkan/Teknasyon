@@ -25,6 +25,8 @@
 		36019F0C2988495A005B8DFF /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F0B2988495A005B8DFF /* LoadingManager.swift */; };
 		36019F10298849A8005B8DFF /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F0F298849A8005B8DFF /* UIKit+Extensions.swift */; };
 		36019F13298849CB005B8DFF /* LoadingShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F12298849CB005B8DFF /* LoadingShowable.swift */; };
+		36019F1529884A84005B8DFF /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F1429884A84005B8DFF /* AlertManager.swift */; };
+		36019F1929884AFE005B8DFF /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F1829884AFE005B8DFF /* CustomAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		36019F0B2988495A005B8DFF /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
 		36019F0F298849A8005B8DFF /* UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		36019F12298849CB005B8DFF /* LoadingShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingShowable.swift; sourceTree = "<group>"; };
+		36019F1429884A84005B8DFF /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		36019F1829884AFE005B8DFF /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				36019F0B2988495A005B8DFF /* LoadingManager.swift */,
+				36019F1429884A84005B8DFF /* AlertManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -167,6 +172,8 @@
 		36019EEB29884278005B8DFF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36019F1729884AF3005B8DFF /* Controller */,
+				36019F1629884AED005B8DFF /* UIView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,6 +243,21 @@
 				36019F12298849CB005B8DFF /* LoadingShowable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		36019F1629884AED005B8DFF /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		36019F1729884AF3005B8DFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36019F1829884AFE005B8DFF /* CustomAlertController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +362,7 @@
 			files = (
 				36019F07298847C8005B8DFF /* Constants+API.swift in Sources */,
 				36019EF72988467E005B8DFF /* TmdbRequest.swift in Sources */,
+				36019F1529884A84005B8DFF /* AlertManager.swift in Sources */,
 				36019ED029884075005B8DFF /* AppDelegate.swift in Sources */,
 				36019F022988477E005B8DFF /* GetPopularTvShowsResponse.swift in Sources */,
 				36019F10298849A8005B8DFF /* UIKit+Extensions.swift in Sources */,
@@ -350,6 +373,7 @@
 				36019F0C2988495A005B8DFF /* LoadingManager.swift in Sources */,
 				36019EF1298844C3005B8DFF /* MainCoordinator.swift in Sources */,
 				36019EFC298846D4005B8DFF /* GetPopularTvShowsRequest.swift in Sources */,
+				36019F1929884AFE005B8DFF /* CustomAlertController.swift in Sources */,
 				36019F05298847BA005B8DFF /* Constants.swift in Sources */,
 				36019F13298849CB005B8DFF /* LoadingShowable.swift in Sources */,
 			);
