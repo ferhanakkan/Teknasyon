@@ -22,6 +22,9 @@
 		36019F05298847BA005B8DFF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F04298847BA005B8DFF /* Constants.swift */; };
 		36019F07298847C8005B8DFF /* Constants+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F06298847C8005B8DFF /* Constants+API.swift */; };
 		36019F0A29884824005B8DFF /* PopularTvShowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F0929884824005B8DFF /* PopularTvShowResult.swift */; };
+		36019F0C2988495A005B8DFF /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F0B2988495A005B8DFF /* LoadingManager.swift */; };
+		36019F10298849A8005B8DFF /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F0F298849A8005B8DFF /* UIKit+Extensions.swift */; };
+		36019F13298849CB005B8DFF /* LoadingShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F12298849CB005B8DFF /* LoadingShowable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		36019F04298847BA005B8DFF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		36019F06298847C8005B8DFF /* Constants+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+API.swift"; sourceTree = "<group>"; };
 		36019F0929884824005B8DFF /* PopularTvShowResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowResult.swift; sourceTree = "<group>"; };
+		36019F0B2988495A005B8DFF /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		36019F0F298849A8005B8DFF /* UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		36019F12298849CB005B8DFF /* LoadingShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingShowable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		36019EE429884232005B8DFF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				36019F0B2988495A005B8DFF /* LoadingManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -149,6 +156,8 @@
 		36019EEA2988426C005B8DFF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				36019F11298849B5005B8DFF /* Protocols */,
+				36019F0D2988498A005B8DFF /* Extensions */,
 				36019F03298847B5005B8DFF /* Constants */,
 				36019EEF298844BC005B8DFF /* Coordinator */,
 			);
@@ -203,6 +212,30 @@
 				36019F0929884824005B8DFF /* PopularTvShowResult.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		36019F0D2988498A005B8DFF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36019F0E29884991005B8DFF /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36019F0E29884991005B8DFF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				36019F0F298849A8005B8DFF /* UIKit+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		36019F11298849B5005B8DFF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				36019F12298849CB005B8DFF /* LoadingShowable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,13 +342,16 @@
 				36019EF72988467E005B8DFF /* TmdbRequest.swift in Sources */,
 				36019ED029884075005B8DFF /* AppDelegate.swift in Sources */,
 				36019F022988477E005B8DFF /* GetPopularTvShowsResponse.swift in Sources */,
+				36019F10298849A8005B8DFF /* UIKit+Extensions.swift in Sources */,
 				36019EFE298846FB005B8DFF /* GetTvShowsDetailsRequest.swift in Sources */,
 				36019EF529884676005B8DFF /* TmdbAPI.swift in Sources */,
 				36019F0029884756005B8DFF /* GetTvShowDetailsResponse.swift in Sources */,
 				36019F0A29884824005B8DFF /* PopularTvShowResult.swift in Sources */,
+				36019F0C2988495A005B8DFF /* LoadingManager.swift in Sources */,
 				36019EF1298844C3005B8DFF /* MainCoordinator.swift in Sources */,
 				36019EFC298846D4005B8DFF /* GetPopularTvShowsRequest.swift in Sources */,
 				36019F05298847BA005B8DFF /* Constants.swift in Sources */,
+				36019F13298849CB005B8DFF /* LoadingShowable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
