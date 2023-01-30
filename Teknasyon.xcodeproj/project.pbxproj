@@ -38,7 +38,21 @@
 		36019F2F29884D2A005B8DFF /* ActivityIndicatorContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F2E29884D2A005B8DFF /* ActivityIndicatorContainerView.swift */; };
 		36019F3129884D68005B8DFF /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F3029884D68005B8DFF /* UIStackView+Extensions.swift */; };
 		36019F3329884E5C005B8DFF /* Constants+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F3229884E5C005B8DFF /* Constants+Home.swift */; };
+		36019F4329884F5C005B8DFF /* MockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4229884F5C005B8DFF /* MockCoordinator.swift */; };
+		36019F4629884F7D005B8DFF /* MockHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4529884F7D005B8DFF /* MockHomeController.swift */; };
+		36019F4829884F82005B8DFF /* MockHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4729884F82005B8DFF /* MockHomeRepository.swift */; };
+		36019F4A29884FB3005B8DFF /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F4929884FB3005B8DFF /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36019F3C29884F2D005B8DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36019EC429884075005B8DFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36019ECB29884075005B8DFF;
+			remoteInfo = Teknasyon;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		36019ECC29884075005B8DFF /* Teknasyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teknasyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +87,11 @@
 		36019F2E29884D2A005B8DFF /* ActivityIndicatorContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorContainerView.swift; sourceTree = "<group>"; };
 		36019F3029884D68005B8DFF /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		36019F3229884E5C005B8DFF /* Constants+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Home.swift"; sourceTree = "<group>"; };
+		36019F3829884F2D005B8DFF /* TeknasyonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeknasyonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36019F4229884F5C005B8DFF /* MockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinator.swift; sourceTree = "<group>"; };
+		36019F4529884F7D005B8DFF /* MockHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeController.swift; sourceTree = "<group>"; };
+		36019F4729884F82005B8DFF /* MockHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRepository.swift; sourceTree = "<group>"; };
+		36019F4929884FB3005B8DFF /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36019F3529884F2D005B8DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				36019ECE29884075005B8DFF /* Teknasyon */,
+				36019F3929884F2D005B8DFF /* TeknasyonTests */,
 				36019ECD29884075005B8DFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				36019ECC29884075005B8DFF /* Teknasyon.app */,
+				36019F3829884F2D005B8DFF /* TeknasyonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,6 +345,33 @@
 			path = TvShowListingCell;
 			sourceTree = "<group>";
 		};
+		36019F3929884F2D005B8DFF /* TeknasyonTests */ = {
+			isa = PBXGroup;
+			children = (
+				36019F4229884F5C005B8DFF /* MockCoordinator.swift */,
+				36019F4129884F38005B8DFF /* Modules */,
+			);
+			path = TeknasyonTests;
+			sourceTree = "<group>";
+		};
+		36019F4129884F38005B8DFF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36019F4429884F76005B8DFF /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		36019F4429884F76005B8DFF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				36019F4529884F7D005B8DFF /* MockHomeController.swift */,
+				36019F4729884F82005B8DFF /* MockHomeRepository.swift */,
+				36019F4929884FB3005B8DFF /* HomeViewModelTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,6 +396,24 @@
 			productReference = 36019ECC29884075005B8DFF /* Teknasyon.app */;
 			productType = "com.apple.product-type.application";
 		};
+		36019F3729884F2D005B8DFF /* TeknasyonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36019F4029884F2D005B8DFF /* Build configuration list for PBXNativeTarget "TeknasyonTests" */;
+			buildPhases = (
+				36019F3429884F2D005B8DFF /* Sources */,
+				36019F3529884F2D005B8DFF /* Frameworks */,
+				36019F3629884F2D005B8DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36019F3D29884F2D005B8DFF /* PBXTargetDependency */,
+			);
+			name = TeknasyonTests;
+			productName = TeknasyonTests;
+			productReference = 36019F3829884F2D005B8DFF /* TeknasyonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -353,6 +426,11 @@
 				TargetAttributes = {
 					36019ECB29884075005B8DFF = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					36019F3729884F2D005B8DFF = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 36019ECB29884075005B8DFF;
 					};
 				};
 			};
@@ -373,6 +451,7 @@
 			projectRoot = "";
 			targets = (
 				36019ECB29884075005B8DFF /* Teknasyon */,
+				36019F3729884F2D005B8DFF /* TeknasyonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -385,6 +464,13 @@
 				36019EDC29884076005B8DFF /* LaunchScreen.storyboard in Resources */,
 				36019ED929884076005B8DFF /* Assets.xcassets in Resources */,
 				36019EED29884294005B8DFF /* AppIcon.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36019F3629884F2D005B8DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +533,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36019F3429884F2D005B8DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36019F4629884F7D005B8DFF /* MockHomeController.swift in Sources */,
+				36019F4329884F5C005B8DFF /* MockCoordinator.swift in Sources */,
+				36019F4829884F82005B8DFF /* MockHomeRepository.swift in Sources */,
+				36019F4A29884FB3005B8DFF /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36019F3D29884F2D005B8DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36019ECB29884075005B8DFF /* Teknasyon */;
+			targetProxy = 36019F3C29884F2D005B8DFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		36019EDA29884076005B8DFF /* LaunchScreen.storyboard */ = {
@@ -639,6 +744,55 @@
 			};
 			name = Release;
 		};
+		36019F3E29884F2D005B8DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43THU6L26P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhanakkan.TeknasyonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teknasyon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Teknasyon";
+			};
+			name = Debug;
+		};
+		36019F3F29884F2D005B8DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43THU6L26P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhanakkan.TeknasyonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teknasyon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Teknasyon";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -656,6 +810,15 @@
 			buildConfigurations = (
 				36019EE129884076005B8DFF /* Debug */,
 				36019EE229884076005B8DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36019F4029884F2D005B8DFF /* Build configuration list for PBXNativeTarget "TeknasyonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36019F3E29884F2D005B8DFF /* Debug */,
+				36019F3F29884F2D005B8DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

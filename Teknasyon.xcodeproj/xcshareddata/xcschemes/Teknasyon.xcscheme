@@ -29,6 +29,17 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36019F3729884F2D005B8DFF"
+               BuildableName = "TeknasyonTests.xctest"
+               BlueprintName = "TeknasyonTests"
+               ReferencedContainer = "container:Teknasyon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
