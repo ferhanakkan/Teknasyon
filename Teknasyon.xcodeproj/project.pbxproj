@@ -27,6 +27,17 @@
 		36019F13298849CB005B8DFF /* LoadingShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F12298849CB005B8DFF /* LoadingShowable.swift */; };
 		36019F1529884A84005B8DFF /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F1429884A84005B8DFF /* AlertManager.swift */; };
 		36019F1929884AFE005B8DFF /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F1829884AFE005B8DFF /* CustomAlertController.swift */; };
+		36019F1C29884BFC005B8DFF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F1B29884BFC005B8DFF /* HomeController.swift */; };
+		36019F1E29884C00005B8DFF /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F1D29884C00005B8DFF /* HomeRepository.swift */; };
+		36019F2029884C05005B8DFF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F1F29884C05005B8DFF /* HomeViewModel.swift */; };
+		36019F2229884C16005B8DFF /* AlertShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F2129884C16005B8DFF /* AlertShowable.swift */; };
+		36019F2429884C29005B8DFF /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F2329884C29005B8DFF /* ViewModelProtocols.swift */; };
+		36019F2929884CA5005B8DFF /* TvShowListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F2829884CA5005B8DFF /* TvShowListingTableViewCell.swift */; };
+		36019F2B29884CAD005B8DFF /* TvShowListingTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F2A29884CAD005B8DFF /* TvShowListingTableViewCellViewModel.swift */; };
+		36019F2D29884D07005B8DFF /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F2C29884D07005B8DFF /* UITableView+Extensions.swift */; };
+		36019F2F29884D2A005B8DFF /* ActivityIndicatorContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F2E29884D2A005B8DFF /* ActivityIndicatorContainerView.swift */; };
+		36019F3129884D68005B8DFF /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F3029884D68005B8DFF /* UIStackView+Extensions.swift */; };
+		36019F3329884E5C005B8DFF /* Constants+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36019F3229884E5C005B8DFF /* Constants+Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +62,17 @@
 		36019F12298849CB005B8DFF /* LoadingShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingShowable.swift; sourceTree = "<group>"; };
 		36019F1429884A84005B8DFF /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		36019F1829884AFE005B8DFF /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
+		36019F1B29884BFC005B8DFF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		36019F1D29884C00005B8DFF /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		36019F1F29884C05005B8DFF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		36019F2129884C16005B8DFF /* AlertShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertShowable.swift; sourceTree = "<group>"; };
+		36019F2329884C29005B8DFF /* ViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
+		36019F2829884CA5005B8DFF /* TvShowListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowListingTableViewCell.swift; sourceTree = "<group>"; };
+		36019F2A29884CAD005B8DFF /* TvShowListingTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowListingTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		36019F2C29884D07005B8DFF /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		36019F2E29884D2A005B8DFF /* ActivityIndicatorContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorContainerView.swift; sourceTree = "<group>"; };
+		36019F3029884D68005B8DFF /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		36019F3229884E5C005B8DFF /* Constants+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Home.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +112,6 @@
 				36019EE529884237005B8DFF /* Networking */,
 				36019EE729884250005B8DFF /* Resources */,
 				36019EE82988425C005B8DFF /* Scenes */,
-				36019EE929884262005B8DFF /* Supports */,
 				36019EEA2988426C005B8DFF /* Utilities */,
 				36019EEB29884278005B8DFF /* Views */,
 			);
@@ -147,15 +168,9 @@
 		36019EE82988425C005B8DFF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				36019F1A29884BF7005B8DFF /* Home */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		36019EE929884262005B8DFF /* Supports */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Supports;
 			sourceTree = "<group>";
 		};
 		36019EEA2988426C005B8DFF /* Utilities */ = {
@@ -209,6 +224,7 @@
 			children = (
 				36019F04298847BA005B8DFF /* Constants.swift */,
 				36019F06298847C8005B8DFF /* Constants+API.swift */,
+				36019F3229884E5C005B8DFF /* Constants+Home.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -233,6 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				36019F0F298849A8005B8DFF /* UIKit+Extensions.swift */,
+				36019F2C29884D07005B8DFF /* UITableView+Extensions.swift */,
+				36019F3029884D68005B8DFF /* UIStackView+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -241,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				36019F12298849CB005B8DFF /* LoadingShowable.swift */,
+				36019F2129884C16005B8DFF /* AlertShowable.swift */,
+				36019F2329884C29005B8DFF /* ViewModelProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -248,6 +268,7 @@
 		36019F1629884AED005B8DFF /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				36019F2E29884D2A005B8DFF /* ActivityIndicatorContainerView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -258,6 +279,42 @@
 				36019F1829884AFE005B8DFF /* CustomAlertController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		36019F1A29884BF7005B8DFF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				36019F2529884C89005B8DFF /* Views */,
+				36019F1B29884BFC005B8DFF /* HomeController.swift */,
+				36019F1D29884C00005B8DFF /* HomeRepository.swift */,
+				36019F1F29884C05005B8DFF /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		36019F2529884C89005B8DFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36019F2629884C8F005B8DFF /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36019F2629884C8F005B8DFF /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				36019F2729884C96005B8DFF /* TvShowListingCell */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		36019F2729884C96005B8DFF /* TvShowListingCell */ = {
+			isa = PBXGroup;
+			children = (
+				36019F2829884CA5005B8DFF /* TvShowListingTableViewCell.swift */,
+				36019F2A29884CAD005B8DFF /* TvShowListingTableViewCellViewModel.swift */,
+			);
+			path = TvShowListingCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,21 +417,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36019F2029884C05005B8DFF /* HomeViewModel.swift in Sources */,
 				36019F07298847C8005B8DFF /* Constants+API.swift in Sources */,
 				36019EF72988467E005B8DFF /* TmdbRequest.swift in Sources */,
+				36019F2D29884D07005B8DFF /* UITableView+Extensions.swift in Sources */,
 				36019F1529884A84005B8DFF /* AlertManager.swift in Sources */,
 				36019ED029884075005B8DFF /* AppDelegate.swift in Sources */,
+				36019F3329884E5C005B8DFF /* Constants+Home.swift in Sources */,
 				36019F022988477E005B8DFF /* GetPopularTvShowsResponse.swift in Sources */,
 				36019F10298849A8005B8DFF /* UIKit+Extensions.swift in Sources */,
+				36019F2229884C16005B8DFF /* AlertShowable.swift in Sources */,
 				36019EFE298846FB005B8DFF /* GetTvShowsDetailsRequest.swift in Sources */,
 				36019EF529884676005B8DFF /* TmdbAPI.swift in Sources */,
+				36019F1C29884BFC005B8DFF /* HomeController.swift in Sources */,
 				36019F0029884756005B8DFF /* GetTvShowDetailsResponse.swift in Sources */,
 				36019F0A29884824005B8DFF /* PopularTvShowResult.swift in Sources */,
 				36019F0C2988495A005B8DFF /* LoadingManager.swift in Sources */,
+				36019F3129884D68005B8DFF /* UIStackView+Extensions.swift in Sources */,
 				36019EF1298844C3005B8DFF /* MainCoordinator.swift in Sources */,
+				36019F2429884C29005B8DFF /* ViewModelProtocols.swift in Sources */,
 				36019EFC298846D4005B8DFF /* GetPopularTvShowsRequest.swift in Sources */,
 				36019F1929884AFE005B8DFF /* CustomAlertController.swift in Sources */,
+				36019F2B29884CAD005B8DFF /* TvShowListingTableViewCellViewModel.swift in Sources */,
+				36019F2929884CA5005B8DFF /* TvShowListingTableViewCell.swift in Sources */,
 				36019F05298847BA005B8DFF /* Constants.swift in Sources */,
+				36019F1E29884C00005B8DFF /* HomeRepository.swift in Sources */,
+				36019F2F29884D2A005B8DFF /* ActivityIndicatorContainerView.swift in Sources */,
 				36019F13298849CB005B8DFF /* LoadingShowable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
